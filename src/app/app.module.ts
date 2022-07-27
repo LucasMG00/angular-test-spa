@@ -8,10 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
-import { AlunosComponent } from './alunos/alunos.component';
+import { AlunosComponent } from './components/alunos/alunos.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTableModule } from '@angular/material/table';
-import { ProfessoresComponent } from './professores/professores.component';
+import { ProfessoresComponent } from './components/professores/professores.component';
 
 @NgModule({
   declarations: [
