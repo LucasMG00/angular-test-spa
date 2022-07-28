@@ -1,0 +1,17 @@
+<br>
+<h2 style="text-align: center">Rick & Morty API</h2>
+<hr/>
+<section class="d-flex align-items-center justify-content-center flex-wrap" style="color:white">
+  <div class="card mx-2 my-2" style="width: 18rem;" *ngFor="let p of chars">
+    <img class="card-img-top" [src]="p.image" alt="Card image cap">
+    <div class="card-body bg-dark">
+      <h5 class="card-title">ID: {{p.id}}</h5>
+      <p class="card-text">Name: {{p.name}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item bg-dark" style="color:white">Gender: {{p.gender}}</li>
+      <li class="list-group-item bg-dark" style="color:white">Species: {{p.species}}</li>
+      <li class="list-group-item bg-dark" style="color:white">Status: {{p.status}}</li>
+    </ul>
+  </div>
+</section>
