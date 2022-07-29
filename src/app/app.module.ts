@@ -7,35 +7,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponent } from './home/home.component';
-import { AlunosComponent } from './components/alunos/alunos.component';
-import { ProfessoresComponent } from './components/professores/professores.component';
+import { AlunosComponent } from './components/alunos/alunos-list/alunos.component';
 
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatTableModule } from '@angular/material/table';
 import { RickmortyApiService } from './services/rickmorty-api.service';
 import { RickmortyComponent } from './components/rickmorty/rickmorty.component';
+import { AlunosFormComponent } from './components/alunos/alunos-form/alunos-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AlunosComponent,
-    ProfessoresComponent,
-    RickmortyComponent
+    RickmortyComponent,
+    AlunosFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatMenuModule,
-    MatTabsModule,
-    MatTableModule
+    HttpClientModule
   ],
   providers: [RickmortyApiService],
   bootstrap: [AppComponent]

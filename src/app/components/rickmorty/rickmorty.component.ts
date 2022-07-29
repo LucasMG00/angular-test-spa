@@ -9,6 +9,7 @@ import { RickmortyApiService } from 'src/app/services/rickmorty-api.service';
 export class RickmortyComponent implements OnInit {
 
   chars;
+  visivel: boolean = false;
 
   constructor(private rm: RickmortyApiService) { }
 
@@ -20,6 +21,10 @@ export class RickmortyComponent implements OnInit {
     this.rm.listar().subscribe(dados => {
       this.chars = dados.results
     })
+  }
+
+  mostar(){
+    this.visivel = true;
   }
 
 }
